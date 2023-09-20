@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="px-64 py-6">
+      <div class="flex items-center justify-between">
+        <div class="fixed">
+          <img src="images/CodeIn.png" alt="" class="w-32 mt-8" />
+        </div>
+        <div class="fixed">
+          <div class="flex items-center space-x-12 z-50 mt-8 ml-[500px]">
+            <a href="index.html" class="font-semibold">Beranda</a>
+            <a href="index.html#pelajaran" class="font-semibold">Pelajaran</a>
+            <a href="playground.html" class="font-semibold">Playground</a>
+            <a
+              href="login.html"
+              class="border px-4 py-1.5 rounded-md border-black font-semibold"
+              >Masuk</a
+            >
+          </div>
+        </div>
+        <img
+          src="images/Decore.png"
+          class="absolute right-0 top-0 -z-50"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="flex w-full h-3/4 p-5 mt-4">
+      <div class="p-2 flex-row w-1/2">
+        <div class="bg-white rounded-lg shadow-md mb-6 p-4">
+          <p
+            class="pt-2 pl-2 underline underline-offset-4 decoration-orange items-center text-dark font-semibold text-lg"
+          >
+            Study Case
+          </p>
+          <p class="pt-2 pl-2 items-center text-md">
+            Buatlah form seperti pada gambar di bawah:
+          </p>
+          <img src="images/case.png" alt="" class="mb-8" />
+        </div>
+      </div>
+      <div class="p-2 flex-row w-1/2">
+        <div class="bg-white rounded-lg shadow-md mb-6">
+          <label
+            for="html"
+            class="pt-6 pl-2 underline underline-offset-4 decoration-orange items-center flex text-dark font-semibold text-lg"
+            ><i class="fa-brands fa-html5 ml-4"></i>HTML</label
+          >
+          <textarea
+            name="html"
+            id="html-code"
+            class="w-full h-60 px-6 pt-2 text-sm font-mono outline-none tracking-wider"
+            onkeyup="studycase()"
+            placeholder="Type your HTML code"
+          ></textarea>
+        </div>
+        <div class="bg-white rounded-lg shadow-md pb-2 mb-6">
+          <label
+            for="output"
+            class="pt-6 pl-2 underline underline-offset-4 decoration-orange items-center flex text-dark font-semibold text-lg"
+            ><i class="fa-brand fa-css3 ml-4"></i>Output</label
+          >
+          <iframe
+            id="output"
+            class="w-full h-80 px-4 bg-white border-0 outline-none"
+          ></iframe>
+        </div>
+        <a
+          href="#"
+          id="openModal"
+          class="bg-orange w-full rounded-md text-white px-[342px] py-2 font-semibold hover:bg-orange/80"
+          >Send</a
+        >
+      </div>
+    </div>
+    <div
+      id="scoreModal"
+      class="fixed inset-0 items-center justify-center hidden"
+    >
+      <div
+        class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50 -z-50"
+      ></div>
+      <div
+        class="modal-container bg-white md:max-w-xs mx-auto rounded-lg shadow-lg z-50 overflow-y-auto mt-60"
+      >
+        <div class="modal-content text-center pb-4">
+          <div class="flex justify-between items-center py-2 px-4 border-b">
+            <h1 class="text-2xl font-semibold text-dark">Skor Anda</h1>
+            <button id="closeModal" class="text-gray-500 hover:text-gray-700">
+              <svg
+                class="fill-current h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M6.293 6.293a1 1 0 011.414 0L10 8.586l2.293-2.293a1 1 0 111.414 1.414L11.414 10l2.293 2.293a1 1 0 11-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 01-1.414-1.414L8.586 10 6.293 7.707a1 1 0 010-1.414z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="px-4 py-2">
+            <p class="text-5xl font-bold text-orange mb-6 mt-4" id="modalScore">
+              0
+            </p>
+          </div>
+          <a
+            href="https://drive.google.com/uc?export=download&id=1p2ta_vDhra8nko3CMw3DDNiDCNYeAiJF"
+            class="bg-orange text-white py-2 px-16 rounded-md"
+            >Unduh Sertifikat Anda</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

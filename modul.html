@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="px-64 py-6">
+      <div class="flex items-center justify-between">
+        <div class="fixed">
+          <img src="images/CodeIn.png" alt="" class="w-32 mt-8" />
+        </div>
+        <div class="fixed">
+          <div class="flex items-center space-x-12 z-50 mt-8 ml-[500px]">
+            <a href="index.html" class="font-semibold">Beranda</a>
+            <a href="index.html#pelajaran" class="font-semibold">Pelajaran</a>
+            <a href="playground.html" class="font-semibold">Playground</a>
+            <a
+              href="login.html"
+              class="border px-4 py-1.5 rounded-md border-black font-semibold"
+              >Masuk</a>
+          </div>
+        </div>
+        <img
+          src="images/Decore.png"
+          class="absolute right-0 top-0 -z-50"
+          alt=""
+        />
+      </div>
+    </div>
+    <section class="text-gray-800 mt-8">
+      <div
+        class="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8"
+      >
+        <h2 class="text-2xl font-bold text-dark sm:text-4xl">
+          Pembelajaran Frontend
+        </h2>
+        <p class="mt-4 mb-6 text-dark">
+          Kursus Pembelajaran Frontend adalah program pelatihan yang dirancang untuk membekali peserta dengan keterampilan dan pengetahuan yang diperlukan untuk menjadi seorang pengembang web frontend yang kompeten
+        </p>
+        <div class="space-y-4">
+          <details class="w-full rounded-lg" open="">
+            <summary
+              class="px-4 py-6 text-dark focus:outline-none focus-visible:ri"
+            >
+              Apa itu HTML?
+            </summary>
+            <iframe
+              src="images/html.pdf"
+              width="100%"
+              height="500px"
+              class="px-4"
+            ></iframe>
+          </details>
+          <details class="w-full rounded-lg">
+            <summary
+              class="px-4 py-6 text-dark focus:outline-none focus-visible:ri"
+            >
+              Basic dasar frontend
+            </summary>
+            <iframe
+              src="images/Frontend.pdf"
+              width="100%"
+              height="500px"
+              class="px-4"
+            ></iframe>
+          </details>
+          <div class="flex items-center space-x-6">
+            <a
+              href="studycase.html"
+              class="px-4 py-2.5 rounded-md bg-orange text-textWhite"
+              >Studi Kasus!</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

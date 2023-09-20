@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+    <div class="px-64 py-6">
+        <div class="flex items-center justify-between">
+            <div class="fixed">
+                <img src="images/CodeIn.png" alt="" class="w-32 mt-8">
+            </div>
+            <div class="fixed">
+                <div class="flex items-center space-x-12 z-50 mt-8 ml-[500px]">
+                    <a href="index.html" class="font-semibold">Beranda</a>
+                    <a href="index.html#pelajaran" class="font-semibold">Pelajaran</a>
+                    <a href="playground.html" class="font-semibold">Playground</a>
+                    <a
+                      href="login.html"
+                      class="border px-4 py-1.5 rounded-md border-black font-semibold"
+                      >Masuk</a
+                    >
+                  </div>
+            </div>
+            <img src="images/Decore.png" class="absolute right-0 top-0 -z-50" alt="">
+        </div>
+    </div>
+    <div class="flex w-full h-3/4 p-5 mt-4">
+        <div class="p-2 flex-row w-1/2">
+            <div class="bg-white rounded-lg shadow-md mb-6">
+                <label for="html" class="pt-6 pl-2 underline underline-offset-4 decoration-orange items-center flex text-dark font-semibold text-lg"><i class="fa-brands fa-html5 ml-4"></i>HTML</label>
+                <textarea name="html" id="html-code" class="w-full h-52 px-6 pt-2 text-sm font-mono outline-none tracking-wider" onkeyup="run()" placeholder="Type your HTML code"></textarea>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md mb-6">
+                <label for="css" class="pt-6 pl-2 underline underline-offset-4 decoration-orange items-center flex text-dark font-semibold text-lg"><i class="fa-brands fa-html5 ml-4"></i>CSS</label>
+                <textarea name="css" id="css-code" class="w-full h-52 px-6 pt-2 text-sm font-mono outline-none tracking-wider" onkeyup="run()" placeholder="Give it any style from here"></textarea>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md mb-6">
+                <label for="js" class="pt-6 pl-2 underline underline-offset-4 decoration-orange items-center flex text-dark font-semibold text-lg"><i class="fa-brands fa-html5 ml-4"></i>JavaScript</label>
+                <textarea name="js" id="js-code" class="w-full h-52 px-6 pt-2 text-sm font-mono outline-none tracking-wider" onkeyup="run()" placeholder="Input JavaScript for a more dynamic and interactive view"></textarea>
+            </div>
+        </div>
+        <div class="w-1/2 bg-white rounded-lg shadow-md mb-6 mt-1.5 ml-4">
+            <label for="output" class="pt-6 pl-2 underline underline-offset-4 decoration-orange items-center flex text-dark font-semibold text-lg"><i class="fa-brand fa-css3 ml-4"></i>Output</label>
+            <iframe id="output" class="w-full h-5/6 px-4 pt-2 bg-white border-0 outline-none"></iframe>
+        </div>
+    </div>
+        <script src="script.js"></script>
+</body>
+</html>
